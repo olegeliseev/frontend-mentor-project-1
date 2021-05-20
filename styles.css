@@ -1,21 +1,91 @@
-body {
-    padding: 0;
-    margin: 0;
+/* ============= DESKTOP ============= */
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(233, 47%, 7%);
+}
+
+span {
+  color: hsl(277, 64%, 61%);
 }
 
 .page {
-    width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    border: 1px solid black;
+  max-width: 1440px;
+  margin: 0;
+  border: 1px solid black;
+  background-color: hsl(244, 38%, 16%);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+}
+
+.content {
+  /* border: 1px solid red; */
+  width: 50%;
+  padding: 60px;
+}
+
+.description {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: 30px;
 }
 
 .stats {
-    display: flex;
-    text-align: center;
+  display: flex;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .stat {
-    border: 1px solid black;
-    margin-right: 10px;
+  margin-right: 50px;
+  text-align: left;
+  text-transform: uppercase; 
 }
+
+.stat > h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.stat > p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.image {
+    border-radius: 0 10px 10px 0;
+    width: 50%;
+    background: url(images/image-header-desktop.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(277, 64%, 61%, 0.5);
+}
+
+
+/* ============= MOBILE ============= */
